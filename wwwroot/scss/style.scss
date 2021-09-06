@@ -1,0 +1,30 @@
+// Main Sass File
+
+@import "colors";
+@import "fonts";
+@import "navbar";
+@import "homepage";
+@import "footer";
+@import "events";
+@import "presentations";
+@import "contact";
+@import "about";
+@import "biography";
+
+$Heading-Lora: "Lora", serif;
+$Body-Roboto: "Roboto", sans-serif;
+
+/* Global resets */
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  color: #484848;
+  font-family: $Body-Roboto;
+}
+.heading {
+  font-family: $Heading-Lora;
+}

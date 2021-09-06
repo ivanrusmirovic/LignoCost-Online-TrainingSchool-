@@ -1,0 +1,33 @@
+﻿using System.IO
+@model string[]
+@{
+    ViewData["Title"] = "Presentations";
+}
+<header>
+    <section class="container-fluid presentations-background">
+        <div class="container h-100">
+            <div class="main-content d-flex flex-column justify-content-center align-items-center">
+                <div class="heading">
+                    <h1>Presentations</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main class="py-5">
+    <section class="presentations-section">
+        <div class="container">
+            <div class="heading">
+                <h1>You can download all the presentations below:</h1>
+            </div>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var file in Model)
+                {
+                    <a href="@(string.Format("/Downloads/Download?fileName={0}", @file))">Download @file</a>
+                }
+            }
+
+        </div>
+    </section>
+</main>

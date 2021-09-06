@@ -1,0 +1,102 @@
+.biography-section {
+  display: flex;
+  position: relative;
+  .about {
+    max-width: 670px;
+  }
+  .link-with-style {
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+  .card {
+    //max-width: 370px;
+    //max-height: 414px;
+    // border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    border: 0;
+    background: transparent;
+    .image {
+      border-radius: 50%;
+
+      background-color: $main-color;
+      padding: 10px;
+      height: 250px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &:hover .image {
+      opacity: 1;
+    }
+    &:hover {
+      box-shadow: none;
+    }
+    p {
+      padding: 1.2rem 0;
+      font-weight: 700;
+      font-size: 19px;
+      text-align: center;
+    }
+  }
+
+  .overlay {
+    background-image: url("../assets/images/Group 23.png");
+    //border: 2px solid black;
+    background-size: cover;
+    z-index: -10;
+    position: absolute;
+    width: 492px;
+    height: 411px;
+    right: 140px;
+    top: -70px;
+  }
+  .overlay-2 {
+    background-image: url("../assets/images/Group 23.png");
+    //border: 2px solid black;
+    background-size: cover;
+    z-index: -10;
+    position: absolute;
+    width: 492px;
+    height: 411px;
+    right: 140px;
+    top: -70px;
+  }
+}
+.references-section {
+  position: relative;
+  .references {
+    max-width: 970px;
+
+    .content {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .overlay-2 {
+    background-image: url("../assets/images/Group 24.png");
+
+    background-size: cover;
+    z-index: -10;
+    position: absolute;
+    width: 570px;
+    height: 292px;
+    left: 150px;
+    top: 140px;
+    transform: rotate(-45deg);
+  }
+}

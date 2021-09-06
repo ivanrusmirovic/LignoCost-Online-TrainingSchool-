@@ -1,0 +1,105 @@
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.about-background {
+  background-image: url(../assets/images/clint-adair-BW0vK-FA3eg-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 548px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #979873, $alpha: 0.5);
+  }
+
+  .heading {
+    display: inline-block;
+    text-align: center;
+    max-width: 570px;
+    padding: 2rem 3rem;
+    border: 1px solid $main-color;
+
+    h1 {
+      font-family: $Heading-Lora;
+      font-size: 38pt;
+    }
+  }
+  .subheading {
+    text-align: center;
+
+    h4 {
+      font-family: $Heading-Lora;
+      font-size: 23pt;
+    }
+  }
+}
+
+.card {
+  max-width: 370px;
+  max-height: 414px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  position: relative;
+
+  .image {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    text-align: center;
+    font-family: $Body-Roboto;
+    font-size: 17px;
+  }
+
+  .middle {
+    position: absolute;
+    transition: 0.5 ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    p {
+      color: $font-dark;
+      z-index: 99;
+      font-weight: 900;
+      font-size: 21px;
+      font-family: $Body-Roboto;
+    }
+  }
+
+  &:hover .image {
+    opacity: 0.3;
+  }
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  &:hover .middle {
+    opacity: 1;
+  }
+}

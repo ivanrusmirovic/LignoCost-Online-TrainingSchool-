@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css")>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Lignocost</title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Lignocost</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Event" asp-action="Index">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Presentation" asp-action="Index">Presentations</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER -->
+    @*<header>
+            <section class="container-fluid contact-background">
+                <div class="container h-100">
+                    <div class="main-content d-flex flex-column justify-content-center align-items-center">
+                        <div class="heading">
+                            <h1>@ViewData["Title"]</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>*@
+    @*<main role="main" class="pb-3">
+            @RenderBody()
+        </main>*@
+    @RenderBody()
+    <!-- FOOTER -->
+    <footer>
+        <div class="container h-100">
+            <div class="footer-wrap">
+                <div class="row">
+                    <div class="nav flex-column footer-nav col-lg-3 justify-content-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link" asp-controller="" asp-action="" role="tab">Home</a>
+                        <a class="nav-link" asp-controller="" asp-action="" role="tab">Events</a>
+                        <a class="nav-link" asp-controller="" asp-action="" role="tab">Presentations</a>
+                        <a class="nav-link" asp-controller="" asp-action="" role="tab">About us</a>
+                        <a class="nav-link" href="@this.Url.Action("Index", "ContactUs")">Contact us</a>
+                    </div>
+
+                    <div class="col-lg-9 partner-logo">
+                        <div class="row">
+                            <div class="col-4 logo-img">
+                                <img src="~/assets/images/sumarski.png" alt="" />
+                            </div>
+                            <div class="col-2 logo-img">
+                                <img src="~/assets/images/poljoprivredni.jpg" alt="" />
+                            </div>
+                            <div class="col-3 logo-img">
+                                <img src="~/assets/images/COST logo.jpeg" alt="" />
+                            </div>
+                            <div class="row">
+
+                                <div class="col-3 logo-img">
+                                    <img src="~/assets/images/tmf.png" alt="" />
+                                </div>
+                                <div class="col-2 logo-img">
+                                    <img src="~/assets/images/VTIpng.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</body>
+</html>

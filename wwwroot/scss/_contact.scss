@@ -1,0 +1,47 @@
+.contact-background {
+  background-image: url(../assets/images/ContactPen.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 548px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #979873, $alpha: 0.4);
+  }
+
+  .heading {
+    display: inline-block;
+    text-align: center;
+    max-width: 570px;
+    padding: 2rem 3rem;
+    border: 1px solid $main-color;
+
+    h1 {
+      font-family: $Heading-Lora;
+      font-size: 38pt;
+    }
+  }
+}
+
+.contact-card {
+  border-bottom: 1px solid $font-dark;
+
+  h2 {
+    font-size: 32px;
+    font-family: $Body-Roboto;
+    color: $font-dark;
+  }
+  p {
+    font-size: 17px;
+    font-style: italic;
+  }
+  a {
+    color: $font-dark;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,46 @@
+.presentations-background {
+  background-image: url(../assets/images/presentation.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 548px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #2e290d, $alpha: 0.5);
+  }
+}
+.main-content {
+  height: 100%;
+  .heading {
+    color: $main-color;
+    max-width: 900px;
+    z-index: 10;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 570px;
+    padding: 2rem 3rem;
+    border: 1px solid $main-color;
+
+    h1 {
+      font-size: 38pt;
+    }
+  }
+}
+
+.presentations-section {
+  height: 100vh;
+
+  .heading {
+    h1 {
+      font-family: $Heading-Lora;
+      font-weight: 300;
+      font-size: 32px;
+    }
+  }
+}
